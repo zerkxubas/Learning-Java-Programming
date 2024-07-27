@@ -20,6 +20,7 @@ public class LabQuestion11 {
                 System.out.println(exception.getMessage());
             }
         }
+        
         System.out.println("Scanning UDP Ports...");
         for (int port = startPort; port<= endPort; port++){
             try(DatagramSocket datagramSocket = new DatagramSocket(port)) {
